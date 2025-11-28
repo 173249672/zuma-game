@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuma Space Odyssey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-CFhYxLW5.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-gLISRet8.css">
+</head>
+
+<body>
+    <div id="app">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-layer">
+            <div id="score-board">
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div id="level-display">
+                <span class="label">LEVEL</span>
+                <span id="level">1</span>
+            </div>
+            <div id="start-screen" class="overlay">
+                <h1 class="title">ZUMA <span class="highlight">ODYSSEY</span></h1>
+                <p class="subtitle">Match 3 balls to clear the chain before it reaches the skull!</p>
+                <button id="start-btn" class="btn-primary">START MISSION</button>
+            </div>
+            <div id="game-over-screen" class="overlay hidden">
+                <h1 class="title">GAME OVER</h1>
+                <p id="final-score-display" class="subtitle">Score: 0</p>
+                <button id="restart-btn" class="btn-primary">RETRY</button>
+            </div>
+            <div id="victory-screen" class="overlay hidden">
+                <h1 class="title">VICTORY</h1>
+                <p class="subtitle">Sector Cleared!</p>
+                <button id="next-level-btn" class="btn-primary">NEXT SECTOR</button>
+            </div>
+            <div id="countdown-screen" class="overlay hidden">
+                <h1 id="countdown-number" class="countdown-number">3</h1>
+            </div>
+            <div id="pause-screen" class="overlay hidden">
+                <h1 class="title">PAUSED</h1>
+                <p class="subtitle">Press SPACE to continue</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
